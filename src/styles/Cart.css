@@ -1,0 +1,298 @@
+.cartCon {
+    background-image: url('../../src/assests/pizza.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cartContainer {
+    width: 66%;
+    background-color: white;
+    margin: 5%;
+    margin-left: 16%;
+}
+
+.cartList {
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px 25px 50px;
+}
+
+.cartImage {
+    height: 85px;
+    width: 120px;
+}
+
+.cartTitle {
+    padding: 26px 0px 0px 45px;
+}
+
+.subDiv {
+    background-color: #121619;
+    height: 150px;
+    color: white;
+    padding: 15px 15px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row
+}
+
+.cart {
+    display: flex;
+    flex-direction: row;
+}
+
+.cart .des {
+    display: flex;
+    flex-direction: row;
+}
+
+.des h4 {
+    margin-top: 0px;
+    padding: 0px 7px 5px 47px;
+}
+
+.btn button {
+    height: 25px;
+    background-color: #121619;
+    color: white;
+    width: 25px;
+    border: none;
+    font-weight: bold;
+}
+
+.btn p {
+    padding: 8px;
+    margin-top: -2px;
+}
+
+.pricePar {
+    margin-top: 0;
+    margin-left: 170px;
+}
+
+.para {
+    margin-left: 200px;
+}
+
+.costing {
+    padding-top: 15px;
+}
+
+.checkBtn {
+    margin-top: 30px;
+    padding: 8px 35px;
+    cursor: pointer;
+}
+
+.productTitle {
+    display: flex;
+    flex-direction: row;
+}
+
+.emptyCart {
+    text-align: center;
+    height: 150px;
+    margin-top: 45px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.btn .cartItemAdd {
+    margin-left: 140px;
+}
+
+.btnDiv {
+    margin-left: 50%;
+    margin-top: 20px;
+}
+
+.pricing {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1150px) {
+    .des h4 {
+        padding: 0px 7px 5px 18px;
+        font-size: 15px;
+    }
+    .btn .cartItemAdd {
+        margin-left: 55px;
+    }
+    .pricePar {
+        margin-left: 110px;
+    }
+    .cartContainer {
+        width: 72%;
+        margin-left: 14%;
+    }
+    .para {
+        margin-left: 145px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .subDiv {
+        font-size: 14px;
+    }
+    .para {
+        margin-left: 140px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .subDiv {
+        font-size: 12px;
+    }
+    .des h4 {
+        font-size: 13px;
+    }
+    .cartImage {
+        height: 73px;
+        width: 92px;
+    }
+    .costing {
+        width: 130px;
+    }
+    .btnDiv {
+        margin-left: 43%;
+    }
+    .para {
+        margin-left: 128px;
+        ;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .para {
+        margin-left: 103px;
+    }
+    .productTitle {
+        margin-left: 25px;
+    }
+    .pricePar {
+        margin-left: 48px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .checkBtn {
+        padding: 4px 20px;
+        font-size: 12px;
+    }
+    .cart {
+        height: 150px;
+        background: #121619;
+        color: white;
+        border-radius: 5px;
+        width: 400px;
+        box-shadow: 0px 3px 15px rgb(0 0 0 / 22%);
+    }
+    .productTitle {
+        display: none;
+    }
+    .cart .des {
+        display: block;
+    }
+    .cartImage {
+        height: 150px;
+        width: 150px;
+        border-radius: 5px;
+    }
+    .des h4 {
+        font-size: 15px;
+        padding: 0px 7px 5px 46px;
+    }
+    .btn button {
+        background-color: white;
+        color: #121619;
+        width: 20px;
+        height: 20px;
+    }
+    .btn p {
+        margin-top: -6px;
+    }
+    .btn .cartItemAdd {
+        margin-left: 47px;
+    }
+    .btnDiv {
+        margin-left: 33%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .cart {
+        width: 360px;
+    }
+    .btnDiv {
+        margin-left: 30%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .cart {
+        height: 250px;
+        width: 261px;
+        display: block;
+    }
+    .cartImage {
+        width: 261px;
+    }
+    .des h4 {
+        margin-top: 5px;
+    }
+    .btn {
+        margin-top: -10px;
+    }
+    .pricePar {
+        margin-top: -10px;
+    }
+    .btnDiv {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .cart {
+        height: 250px;
+        width: 215px;
+    }
+    .cartImage {
+        width: 215px;
+    }
+    .btnDiv {
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .cart {
+        height: 250px;
+        width: 190px;
+    }
+    .cartImage {
+        width: 190px;
+    }
+    .cartTitle {
+        font-size: 18px;
+    }
+    .cartList {
+        padding-left: 26px;
+    }
+    .subDiv {
+        padding-left: 32px;
+        display: block;
+    }
+    .btnDiv {
+        margin-top: 0px;
+        margin-left: 0;
+    }
+    .checkBtn {
+        margin-top: 10px;
+    }
+    .pricing {
+        margin-top: 0px;
+    }
+    .emptyCart {
+        font-size: 20px;
+    }
+}

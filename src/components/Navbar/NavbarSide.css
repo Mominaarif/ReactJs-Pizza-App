@@ -1,0 +1,133 @@
+.SidebarContainer {
+    margin-top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: #121619;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.SidebarMenu {
+    max-height: 319px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 80px);
+    text-align: center;
+    /* @media screen and (max-width: 480px) {
+        grid-template-rows: repeat(3, 60px);
+    } */
+}
+
+.SidebarLink a {
+    top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Icon {
+    position: absolute;
+    top: 28px;
+    right: 55px;
+    background: transparent;
+    border: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+    outline: none;
+    -webkit-text-stroke: 1px white;
+}
+
+.hiddenMenuLogo .Icon svg {
+    color: white;
+    font-size: 40px;
+}
+
+.hiddenMenuLogo {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.hiddenMenuLogo img {
+    width: 70px;
+}
+
+.hideOrderBtn {
+    margin-bottom: 165px;
+    width: 195px;
+    height: 40px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #121619;
+    font-weight: 500;
+    font-size: 18px;
+}
+.closeicon {
+    font-size: 40px;
+}
+
+@media screen and (max-width: 420px) {
+    .hideOrderBtn {
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .navbar #open a {
+        font-size: 12px;
+    }
+    .navbar .leftSide .SidebarLink {
+        margin-top: 25px;
+    }
+    .navbar .leftSide img {
+        width: 60px;
+    }
+    .navbar .rightSide svg {
+        font-size: 35px;
+    }
+    .navbar .leftSide .closeicon {
+        font-size: 35px;
+    }
+    .navbar .leftSide {
+        padding-left: 27px;
+    }
+    .navbar .rightSide {
+        padding-right: 27px;
+    }
+    .Icon {
+        top: 33px;
+        right: 27px;
+
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .navbar .leftSide img {
+        width: 50px;
+    }
+    .navbar .rightSide svg {
+        font-size: 30px;
+    }
+    .navbar .leftSide .closeicon {
+        font-size: 30px;
+    }
+    .navbar .leftSide .SidebarLink {
+        margin-top: 22px;
+    }
+    .navbar a {
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .navbar .leftSide .SidebarLink {
+        margin-top: 28;
+    }
+}

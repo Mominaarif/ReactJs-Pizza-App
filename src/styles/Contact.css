@@ -1,0 +1,181 @@
+.contact {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+
+.contact .leftSide {
+    height: 100%;
+    flex: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact .rightSide {
+    height: 100%;
+    display: flex;
+    flex: 50%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact .rightSide h1 {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida  Sans", Arial, sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+    margin-left: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    padding: 30px;
+}
+
+form input {
+    height: 40px;
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #121619;
+    color: black;
+}
+
+form textarea {
+    margin-top: 15px;
+    height: 70px;
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #121619;
+    color: black;
+}
+
+input::placeholder, textarea::placeholder {
+    font-weight: bold;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form input:focus, textarea:focus {
+    outline: none;
+}
+
+form label {
+    margin-top: 15px;
+    color: grey;
+}
+
+form button {
+    margin-top: 40px;
+    width: 140px;
+    height: 40px;
+    border: none;
+    background-color: #121619;
+    color: whitesmoke;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.smallDiv {
+    display: none;
+}
+
+@media only screen and (max-width: 650px) {
+    contact {
+        display: block;
+        height: 100%;
+    }
+    .contact .rightSide {
+        display: none;
+    }
+    .contact .leftSide {
+        display: none;
+    }
+    .smallDiv {
+        display: flex;
+        width: 100%;
+    }
+    .smallDiv .outerContainer {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .smallDiv .innerContainer {
+        padding-top: 110px;
+    }
+    .smallDiv .innerContainer h1 {
+        font-size: 25px;
+        color: white;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .smallDiv .innerContainer form {
+        padding: 0;
+        padding: 10%;
+    }
+    form label {
+        margin-top: 10px;
+        color: white;
+    }
+    form input {
+        background: transparent;
+    }
+    form textarea {
+        background: transparent;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .contact {
+        display: block;
+        height: 100%;
+    }
+    .contact .rightSide {
+        display: none;
+    }
+    .contact .leftSide {
+        display: none;
+    }
+    .smallDiv {
+        display: flex;
+        width: 100%;
+    }
+    .smallDiv .outerContainer {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .smallDiv .innerContainer h1 {
+        font-size: 25px;
+        color: white;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .smallDiv .innerContainer form {
+        padding: 0;
+        padding: 10%;
+    }
+    form label {
+        margin-top: 10px;
+        color: white;
+    }
+    form input {
+        background: transparent;
+    }
+    form textarea {
+        background: transparent;
+    }
+}
+/* @media only screen and (max-width: 380px) {
+    .smallDiv {
+        display: flex;
+    }
+    .leftSide {
+        display: none;
+    }
+    .rightSide {
+        display: none;
+    }
+} */

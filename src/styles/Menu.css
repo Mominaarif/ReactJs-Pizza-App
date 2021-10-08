@@ -1,0 +1,128 @@
+.menu {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu .menuTitle {
+    font-family: Arial, Helvetica, sans-serif;;
+    font-size: 60px;
+}
+
+.menuList {
+    justify-content: center;
+    width: 70vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.menuItem {
+    border-radius: 15px;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    box-shadow: 0px 3px 15px rgba( 0, 0, 0, 0.2);
+}
+
+.menuItem:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, alpha0.5);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+.menuItem div {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .menuItem h1,
+  .menuItem p {
+    margin-left: 20px;
+  }
+
+  .menuItem button {
+    cursor: pointer;
+    margin-left: 59px;
+    padding: 9px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    background: #121619;
+    color: white;
+    border: 25px;
+    margin-top: 5px;
+  }
+  
+  @media only screen and (max-width: 1300px) {
+    .menuList {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .menuList {
+      grid-template-columns: 1fr;
+    }
+    .menu .menuTitle {
+        font-size: 44px;
+    }
+    .menuItem {
+        width: 575px;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    .menuList {
+      grid-template-columns: 1fr;
+    }
+    .menu .menuTitle {
+        font-size: 37px;
+        height: 18px;
+    }
+    .menuItem {
+        width: 400px;
+        height: 345px;
+    }
+    .menuItem h1 {
+        font-size: 25px;
+    }
+    .menuItem p {
+        font-size: 15px;
+    }
+  }
+
+  @media only screen and (max-width: 440px) {
+    .menuList {
+      grid-template-columns: 1fr;
+    }
+    .menu .menuTitle {
+        font-size: 30px;
+        height: 37px;
+    }
+    .menuItem {
+        width: 325px;
+        height: 345px;
+    }
+  }
+
+  @media only screen and (max-width: 380px) {
+    .menuList {
+      grid-template-columns: 1fr;
+    }
+    .menu .menuTitle {
+        font-size: 30px;
+        height: 37px;
+    }
+    .menuItem {
+        width: 318px;
+        height: 345px;
+    }
+  }

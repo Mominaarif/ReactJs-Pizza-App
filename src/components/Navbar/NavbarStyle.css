@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+
+}
+
+.navbar {
+    background-color: #121619;
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.navbar .leftSide {
+    flex: 50%;
+    display: flex;
+    height: 100%;
+    padding-left: 150px;
+    align-items: center;
+}
+
+.navbar .leftSide img {
+    width: 70px;
+}
+
+.navbar .rightSide {
+    flex: 50%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 15px;
+}
+
+.navbar .rightSide button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar .rightSide svg {
+    font-size: 40px;
+}
+
+.leftSide #close .SidebarContainer {
+    display: none;
+}
+
+.leftSide #open .SidebarContainer {
+    display: grid;
+}
+
+.SidebarMenu .cartIcon {
+    margin-top: 18px;
+    margin-right: 0px;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .navbar .rightSide a {
+        width: 70px;
+    }
+    .navbar .leftSide {
+        padding-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar .rightSide a {
+        display: none;
+    }
+    .navbar .rightSide {
+        justify-content: flex-end;
+        padding-right: 50px;
+    }
+    .navbar .rightSide button {
+        display: inherit;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .navbar .rightSide button {
+        display: none;
+    }
+    .hiddenLinks {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .SidebarMenu .cartIcon {
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .SidebarMenu .cartIcon {
+        margin-top: 19px;
+    }
+}
